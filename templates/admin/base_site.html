@@ -1,0 +1,12 @@
+{% extends "admin/base.html" %}
+{% load admin_static %}
+{% block title %}{{ title }} | {{ 'Sistema de Gestão de OTIF - Invent ' }}{% endblock %}
+
+{% block branding %}
+
+<h1 id="site-name">
+        <img src="{% static 'sgo/img/imgpsh_fullsize.png' %}" height="30" width="30" />
+        <a href="{% url 'admin:index' %}">{{ site_header|default:_('SGO') }}</a></h1>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
